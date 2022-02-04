@@ -3,7 +3,7 @@ import { GithubIcon,EmailIcon } from './icons';
 
 const Footer = () => {
   return (
-    <div className='h-32 w-1/2 flex justify-between items-center mx-auto Absolute'>
+    <div className='h-32 lg:w-1/2 w-5/6 flex justify-between items-center mx-auto Absolute'>
        <p>© 2022 Goga Okradze. All Rights Reserved.</p>
        <div className='flex'>
        <a className="mx-3" target='_blank' href="mailto:deathofsuper@gmail.com" rel="noopener noreferrer">

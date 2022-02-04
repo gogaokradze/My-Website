@@ -72,7 +72,7 @@ export const Moon = () => {
     </svg>
   )
 }
-export const About = ({ className }: IconProps) => {
+export const About = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

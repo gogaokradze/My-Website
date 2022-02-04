@@ -27,7 +27,7 @@ const Header = ({darkTheme,setDarkTheme}) => {
               <Link to="/about">About</Link>
             </li>
           </ul>
-          <button onClick={()=>setDarkTheme(!darkTheme)}>{darkTheme ? <Sun/> : <Moon/>}</button>
+          <button className='pl-16 lg:pl-0' onClick={()=>setDarkTheme(!darkTheme)}>{darkTheme ? <Sun/> : <Moon/>}</button>
         </nav>
         </div>
         <Switch>
