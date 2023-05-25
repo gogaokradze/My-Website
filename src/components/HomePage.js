@@ -1,13 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Projects from "./Projects";
 
 const HomePage = () => {
-  const [isPageLoaded, setIsPageLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsPageLoaded(true);
-  }, []);
-
   return (
     <>
       <div className="w-2/3 mx-auto mb-64">
