@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.projects {
+  background-color: rgb(229 229 229);
+  padding: 1rem;
+}
+
+@keyframes blob-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-blob-spin {
+  animation: blob-spin 20s linear infinite;
+}
+
+.color-lime {
+  color: #7fe6d8;
+}
+
+.container {
+  max-width: 250px;
+  width: 100%;
+}
+
+.mobileLogoHover {
+  cursor: pointer;
+}
+.mobileLogoHover span {
+  transition: all 0.3s ease-in-out;
+}
+
+.mobileLogoHover:hover span {
+  color: #7fe6d8;
+}
+
+.mobileLogoHover:hover img {
+  /* translatey: 10px; */
+  translate: 0 -6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+.mobileNavBar li {
+  margin: 0 !important;
+}
