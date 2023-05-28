@@ -1,22 +1,18 @@
 import React from "react";
 import Projects from "./Projects";
 
-const HomePage = () => {
+const HomePage = ({ darkTheme }) => {
   return (
     <>
       <div className="w-2/3 mx-auto mb-64">
         <div className="flex flex-col-reverse align-center direction-column items-center lg:flex-row lg:justify-between w-100 gap-10">
           <div className="lg:w-2/5 w-full">
-            <p
-              className="lg:text-4xl text-center lg:text-left text-xl leading-relaxed animated-text"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
+            <p className="lg:text-4xl text-center lg:text-left text-xl leading-relaxed animated-text welcomeText">
               Hi, I'm <span className="font-semibold">Goga Okradze</span>. Web developer.
               I have deep interest in creating web apps.
             </p>
           </div>
-          <div className="relative container" data-aos="fade-up" data-aos-delay="300">
+          <div className={`relative container imgLand`}>
             <div className="absolute top-0 flex items-center justify-center w-full h-full z-10">
               <div className="w-32 h-32 overflow-hidden rounded-full md:h-40 md:w-40 lg:h-48 lg:w-48">
                 <img src={"/images/profile.jpg"} alt="" />
@@ -36,7 +32,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <Projects />
+      <Projects darkTheme={darkTheme} />
     </>
   );
 };
