@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import HomePage from "./HomePage";
 import Projects from "./Projects";
@@ -7,15 +7,6 @@ import AboutPage from "./AboutPage";
 
 const Header = ({ darkTheme, setDarkTheme }) => {
   const [isNavVisible, setIsNavVisible] = useState(false);
-
-  useEffect(() => {
-    if (window?.width) {
-      if (window?.width > 768) {
-        setIsNavVisible(false);
-        document.body.style.overflow = "auto";
-      }
-    }
-  }, [window?.width]);
 
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible);
